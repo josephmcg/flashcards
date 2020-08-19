@@ -7,10 +7,30 @@ function App() {
   const [cards, setCards] = useState(KANA);
 
   return (
-    <div className="App">
-      <CardList cards={cards} />
-    </div>
+    <>
+      <div className="header">
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="category">Category: </label>
+            <select name="category" id="category">
+              <option value="hiragana">Hiragana</option>
+              <option value="katakana">Katakana</option>
+            </select>
+          </div>
+          <div className="form-group">
+            <button className="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div className="container">
+        <CardList cards={cards} />
+      </div>
+    </>
   );
+}
+
+function handleSubmit(e) {
+  e.preventDefault();
 }
 
 const KANA = [

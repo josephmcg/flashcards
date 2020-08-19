@@ -10,8 +10,8 @@ function Card({ card }) {
       }}
     >
       <div className="front">
-        {card.hiragana}
-        {card.katakana}
+        <span className="hiragana">{card.hiragana}</span>
+        <span className="katakana">{card.katakana}</span>
       </div>
 
       <div className="back">{card.romaji}</div>
