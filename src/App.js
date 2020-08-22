@@ -4,7 +4,7 @@ import CardList from "./components/CardList";
 import "./App.css";
 
 function App() {
-  const [cards, setCards] = useState(KANA);
+  const [cards] = useState(KANA);
 
   return (
     <>
