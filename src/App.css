@@ -83,6 +83,7 @@ form {
   display: flex;
   justify-content: center;
   width: 100%;
+  transform: rotateX(0deg); /*fixes firefox*/
 }
 
 .card .back {
