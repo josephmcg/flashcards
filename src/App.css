@@ -83,13 +83,13 @@ form {
   display: flex;
   justify-content: center;
   width: 100%;
-  visibility: visible;
 
   /*fixes firefox + safari*/
   transform: rotateX(0deg);
   -webkit-perspective: 0;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
 }
 
 .card .back {
