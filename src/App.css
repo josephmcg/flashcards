@@ -90,6 +90,7 @@ form {
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   visibility: visible;
+  opacity: 0.99;
 }
 
 .card .back {
