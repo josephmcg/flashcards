@@ -57,6 +57,7 @@ form {
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
   background: #fff;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   height: 150px;
   width: 150px;
   margin: 10px;
@@ -85,10 +86,6 @@ form {
   width: 100%;
 
   /*fixes firefox + safari*/
-  transform: rotateX(0deg);
-  -webkit-transform: rotateX(0deg);
-  -webkit-perspective: 0;
-  -webkit-transform-style: preserve-3d;
   -webkit-perspective: 0;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
@@ -97,6 +94,7 @@ form {
 
 .card .back {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .front div {
