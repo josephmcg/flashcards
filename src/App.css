@@ -86,11 +86,9 @@ form {
   width: 100%;
 
   /*fixes firefox + safari*/
-  -webkit-perspective: 0;
   -webkit-backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
-  visibility: visible;
-  opacity: 0.99;
 }
 
 .card .back {
