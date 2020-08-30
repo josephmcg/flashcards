@@ -23,7 +23,6 @@ Adjusting the filter up top will re-render the components, reflecting the select
 
 ## Local Development
 
-
 1. Clone project locally
 2. Run `npm install` in cli
 3. Run `npm start` to run on [http://localhost:3000](http://localhost:3000)
