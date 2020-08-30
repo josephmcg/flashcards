@@ -5,32 +5,29 @@ import "./App.css";
 
 function App() {
   const [cards] = useState(KANA);
+  const [category, setCategory] = useState("both");
 
   return (
     <>
       <div className="header">
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="category">Category: </label>
-            <select name="category" id="category">
-              <option value="hiragana">Hiragana</option>
-              <option value="katakana">Katakana</option>
-            </select>
-          </div>
-          <div className="form-group">
-            <button className="btn">Submit</button>
-          </div>
-        </form>
+        <div className="form-group">
+          <label htmlFor="category">Category: </label>
+          <select
+            name="category"
+            id="category"
+            onChange={(e) => setCategory(e.currentTarget.value)}
+          >
+            <option value="both">Both</option>
+            <option value="hiragana">Hiragana</option>
+            <option value="katakana">Katakana</option>
+          </select>
+        </div>
       </div>
       <div className="container">
-        <CardList cards={cards} />
+        <CardList cards={cards} category={category} />
       </div>
     </>
   );
-}
-
-function handleSubmit(e) {
-  e.preventDefault();
 }
 
 const KANA = [

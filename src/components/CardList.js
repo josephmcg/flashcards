@@ -12,13 +12,13 @@ function shuffleArray(array) {
   return array;
 }
 
-export default function CardList({ cards }) {
+export default function CardList({ cards, category }) {
   const shuffledCards = shuffleArray(cards);
 
   return (
     <div className="card-grid">
       {shuffledCards.map((card) => {
-        return <Card card={card} key={card.id} />;
+        return <Card card={card} key={card.id} category={category} />;
       })}
     </div>
   );
