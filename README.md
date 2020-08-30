@@ -1,7 +1,5 @@
 <h1>Kana Flashcards</h1>
 
-## Introduction
-
 <a href="https://kana-flashcards.netlify.app/">https://kana-flashcards.netlify.app/</a>
 
 React app for studying Hiragana + Katakana. Makes use of functional components + hooks.
@@ -17,11 +15,11 @@ React app for studying Hiragana + Katakana. Makes use of functional components +
 
 ## Local Development
 
-# `npm i`
+### `npm i`
 
 Install necessary packages.
 
-# `npm start`
+### `npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
