@@ -53,6 +53,7 @@ form {
   justify-content: center;
   align-items: center;
   position: relative;
+  font-size: 2rem;
   border-radius: 0.25rem;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
   transform-style: preserve-3d;
@@ -82,6 +83,8 @@ form {
   display: flex;
   justify-content: center;
   width: 100%;
+  height: 100%;
+  background: #fff;
 
   /*fixes firefox + safari*/
   -webkit-backface-visibility: hidden;
@@ -95,8 +98,11 @@ form {
   -webkit-transform: rotateY(180deg);
 }
 
-.front div {
+.front div,
+.back {
   display: flex;
   justify-content: center;
   flex: 1 1 auto;
+  flex-direction: column-reverse;
+  text-align: center;
 }
