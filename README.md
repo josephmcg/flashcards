@@ -11,6 +11,7 @@ React app for studying Hiragana + Katakana. Makes use of functional components +
 <li>Enahnce visual appeal (colors)</li>
 <li>Kanji</li>
 <li>Tests</li>
+<li>Improve mobile experience</li>
 </ul>
 
 ## Local Development
