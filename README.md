@@ -1,29 +1,32 @@
 <h1>Kana Flashcards</h1>
 
-<a href="https://kana-flashcards.netlify.app/">https://kana-flashcards.netlify.app/</a>
+[https://kana-flashcards.netlify.app](https://kana-flashcards.netlify.app)
 
 React app for studying Hiragana + Katakana. Makes use of functional components + hooks.
+
+## Features
+
+Default view of Hiragana and Katakana on the front. Click a card to flip it over and see Romaji.
+
+Order will be random every time so positioning won't affect memory.
+
+Adjusting the filter up top will re-render the components, reflecting the selection.
 
 ## Todo
 
 <ul>
-<li>Button to reset flip for all</li>
-<li>Enahnce visual appeal (colors)</li>
-<li>Kanji</li>
-<li>Tests</li>
-<li>Improve mobile experience</li>
+    <li>Button to reset flip for all</li>
+    <li>Enhance visual appeal (colors)</li>
+    <li>Kanji</li>
+    <li>Tests</li>
+    <li>Improve mobile experience</li>
+    <li>Dark mode</li>
 </ul>
 
 ## Local Development
 
-### `npm i`
-
-Install necessary packages.
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<ol>
+    <li>Clone project locally</li>
+    <li>Run `npm install` in cli</li>
+    <li>Run `npm start` to run on [http://localhost:3000](http://localhost:3000)</li>
+</oi>
