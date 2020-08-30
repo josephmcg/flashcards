@@ -14,19 +14,16 @@ Adjusting the filter up top will re-render the components, reflecting the select
 
 ## Todo
 
-<ul>
-    <li>Button to reset flip for all</li>
-    <li>Enhance visual appeal (colors)</li>
-    <li>Kanji</li>
-    <li>Tests</li>
-    <li>Improve mobile experience</li>
-    <li>Dark mode</li>
-</ul>
+- Button to reset flip for all
+- Enhance visual appeal (colors)
+- Kanji
+- Tests
+- Improve mobile experience
+- Dark mode
 
 ## Local Development
 
-<ol>
-    <li>Clone project locally</li>
-    <li>Run `npm install` in cli</li>
-    <li>Run `npm start` to run on [http://localhost:3000](http://localhost:3000)</li>
-</oi>
+
+1. Clone project locally
+2. Run `npm install` in cli
+3. Run `npm start` to run on [http://localhost:3000](http://localhost:3000)
