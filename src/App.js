@@ -5,7 +5,7 @@ import "./App.css";
 
 function App() {
   const [cards] = useState(KANA);
-  const [category, setCategory] = useState("both");
+  const [category, setCategory] = useState("hiragana");
 
   return (
     <>
@@ -17,9 +17,9 @@ function App() {
             id="category"
             onChange={(e) => setCategory(e.currentTarget.value)}
           >
-            <option value="both">Both</option>
             <option value="hiragana">Hiragana</option>
             <option value="katakana">Katakana</option>
+            <option value="both">Both</option>
           </select>
         </div>
       </div>

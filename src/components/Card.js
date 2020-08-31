@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function Card({ card, category }) {
   const [flip, setFlip] = useState(false);
   return (
-    <div
+    <button
       className={`card ${flip ? "flip" : ""}`}
       onClick={() => {
         setFlip(!flip);
@@ -25,7 +25,7 @@ function Card({ card, category }) {
       </div>
 
       <div className="back">{card.romaji}</div>
-    </div>
+    </button>
   );
 }
 

@@ -2,15 +2,13 @@
 
 [https://kana-flashcards.netlify.app](https://kana-flashcards.netlify.app)
 
-React app for studying Hiragana + Katakana. Makes use of functional components + hooks.
+React app for studying Hiragana and Katakana. Makes use of functional components + hooks.
 
 ## Features
 
-Default view of Hiragana and Katakana on the front. Click a card to flip it over and see Romaji.
+Click a card to flip and see Romaji.
 
-Order will be random every time so positioning won't affect memory.
-
-Adjusting the filter up top will re-render the components, reflecting the selection.
+Order and positioning are random.
 
 ## Todo
 
@@ -24,5 +22,5 @@ Adjusting the filter up top will re-render the components, reflecting the select
 ## Local Development
 
 1. Clone project locally
-2. Run `npm install` in cli
-3. Run `npm start` to run on [http://localhost:3000](http://localhost:3000)
+2. `npm install` in cli
+3. `npm start` to run
