@@ -18,6 +18,7 @@ Order and positioning are random.
 - Tests
 - Improve mobile experience
 - Dark mode
+- 2nd version w/ typing?
 
 ## Local Development
 
