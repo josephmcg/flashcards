@@ -23,5 +23,5 @@ Order and positioning are random.
 ## Local Development
 
 1. Clone project locally
-2. `npm install` in cli
-3. `npm start` to run
+2. `npm install`
+3. `npm start`
