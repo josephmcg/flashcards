@@ -131,7 +131,7 @@ const KANA = [
     id: "17",
     romaji: "chi",
     hiragana: "ち",
-    katakana: "千",
+    katakana: "チ",
   },
   {
     id: "18",
