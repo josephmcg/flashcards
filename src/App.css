@@ -6,12 +6,15 @@ select {
   font-size: 1rem;
 }
 
+button {
+  cursor: pointer;
+}
+
 header {
   display: flex;
   justify-content: space-evenly;
+  flex: 1 0.5;
   align-items: center;
-  flex-wrap: wrap;
-  background-color: #fff;
   padding: 0 1.5rem;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
 }
@@ -25,12 +28,14 @@ header {
 }
 
 .btn {
-  background-color: hsl(200, 100%, 50%);
-  color: #fff;
   padding: 0.5em 1em;
   border-radius: 0.3em;
   border: none;
-  cursor: pointer;
+}
+
+.icon-button {
+  background: none;
+  border: none;
 }
 
 @media (min-width: 768px) {
@@ -60,7 +65,6 @@ header {
   width: 150px;
   margin: 10px;
   transition: 150ms;
-  cursor: pointer;
   transform: perspective(1000px) rotateY(var(--rotate-y, 0))
     translateY(var(--translate-y, 0));
 }
@@ -109,11 +113,6 @@ header {
 .icon {
   width: 1.7rem;
   height: 1.7rem;
-}
-
-.icon-button {
-  background: none;
-  border: none;
 }
 
 .dark,

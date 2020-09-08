@@ -25,6 +25,7 @@ function App() {
             <option value="both">Both</option>
           </select>
         </div>
+
         <button className="icon-button" onClick={() => setDark(!dark)}>
           <img
             src={`${dark ? sun : moon}`}

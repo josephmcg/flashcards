@@ -2,8 +2,7 @@ import React from "react";
 import Card from "./Card";
 
 function shuffleArray(array) {
-  let i = array.length - 1;
-  for (; i > 0; i--) {
+  for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     const temp = array[i];
     array[i] = array[j];
@@ -13,11 +12,11 @@ function shuffleArray(array) {
 }
 
 export default function CardList({ cards, category }) {
-  const shuffledCards = shuffleArray(cards);
+  cards = shuffleArray(cards);
 
   return (
     <div className="card-grid">
-      {shuffledCards.map((card) => {
+      {cards.map((card) => {
         return <Card card={card} key={card.id} category={category} />;
       })}
     </div>
