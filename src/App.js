@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import CardList from "./components/CardList";
+import sun from "./assets/sun.svg";
+import moon from "./assets/moon.svg";
 
 import "./App.css";
 
 function App() {
   const [cards] = useState(KANA);
   const [category, setCategory] = useState("hiragana");
+  const [dark, setDark] = useState(false);
 
   return (
-    <>
-      <div className="header">
+    <div className={`${dark ? "dark" : ""}`}>
+      <header>
         <div className="form-group">
           <label htmlFor="category">Category: </label>
           <select
@@ -22,11 +25,17 @@ function App() {
             <option value="both">Both</option>
           </select>
         </div>
-      </div>
+        <img
+          src={`${dark ? sun : moon}`}
+          alt="sun"
+          class="icon"
+          onClick={() => setDark(!dark)}
+        />
+      </header>
       <div className="container">
         <CardList cards={cards} category={category} />
       </div>
-    </>
+    </div>
   );
 }
 
