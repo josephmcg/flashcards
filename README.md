@@ -13,11 +13,9 @@ Order and positioning are random.
 ## Todo
 
 - Button to reset flip for all
-- Enhance visual appeal (colors)
 - Kanji
 - Tests
-- Improve mobile experience
-- Dark mode
+- Save dark mode to local storage
 - 2nd version w/ typing?
 
 ## Local Development

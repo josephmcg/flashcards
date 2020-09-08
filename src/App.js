@@ -25,12 +25,13 @@ function App() {
             <option value="both">Both</option>
           </select>
         </div>
-        <img
-          src={`${dark ? sun : moon}`}
-          alt="sun"
-          class="icon"
-          onClick={() => setDark(!dark)}
-        />
+        <button className="icon-button" onClick={() => setDark(!dark)}>
+          <img
+            src={`${dark ? sun : moon}`}
+            alt="theme toggle"
+            className="icon"
+          />
+        </button>
       </header>
       <div className="container">
         <CardList cards={cards} category={category} />
