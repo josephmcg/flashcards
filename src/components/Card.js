@@ -16,12 +16,8 @@ function Card({ card, category }) {
             <div className="katakana">{card.katakana}</div>
           </>
         )}
-        {category === "hiragana" && (
-          <div className="hiragana">{card.hiragana}</div>
-        )}
-        {category === "katakana" && (
-          <div className="katakana">{card.katakana}</div>
-        )}
+        {category === "hiragana" && <div className="hiragana">{card.hiragana}</div>}
+        {category === "katakana" && <div className="katakana">{card.katakana}</div>}
       </div>
 
       <div className="back">{card.romaji}</div>

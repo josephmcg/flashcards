@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import CardList from "./components/CardList";
+import Footer from "./components/Footer";
 import sun from "./assets/sun.svg";
 import moon from "./assets/moon.svg";
 
@@ -15,11 +16,7 @@ function App() {
       <header>
         <div className="form-group">
           <label htmlFor="category">Category: </label>
-          <select
-            name="category"
-            id="category"
-            onChange={(e) => setCategory(e.currentTarget.value)}
-          >
+          <select name="category" id="category" onChange={(e) => setCategory(e.currentTarget.value)}>
             <option value="hiragana">Hiragana</option>
             <option value="katakana">Katakana</option>
             <option value="both">Both</option>
@@ -27,16 +24,13 @@ function App() {
         </div>
 
         <button className="icon-button" onClick={() => setDark(!dark)}>
-          <img
-            src={`${dark ? sun : moon}`}
-            alt="theme toggle"
-            className="icon"
-          />
+          <img src={`${dark ? sun : moon}`} alt="theme toggle" className="icon" />
         </button>
       </header>
       <div className="container">
         <CardList cards={cards} category={category} />
       </div>
+      <Footer dark={dark} />
     </div>
   );
 }

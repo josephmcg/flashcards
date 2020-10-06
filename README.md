@@ -6,17 +6,15 @@ React app for studying Hiragana and Katakana. Makes use of functional components
 
 ## Features
 
-Click a card to flip and see Romaji.
-
-Order and positioning are random.
+- Click a card to flip and see Romaji
+- Order and positioning are random
+- Keyboard accessible
 
 ## Todo
 
+- Save dark mode to local storage
 - Button to reset flip for all
 - Kanji
-- Tests
-- Save dark mode to local storage
-- 2nd version w/ typing?
 
 ## Local Development
 
