@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+let randomizedCount = 0;
 
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -11,8 +12,11 @@ function shuffleArray(array) {
   return array;
 }
 
-export default function CardList({ cards, category }) {
-  cards = shuffleArray(cards);
+export default function CardList({ cards, category, random }) {
+  if (random > randomizedCount) {
+    cards = shuffleArray(cards);
+    randomizedCount += 1;
+  }
 
   return (
     <div className="card-grid">

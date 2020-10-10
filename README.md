@@ -7,7 +7,8 @@ React app for studying Hiragana and Katakana. Makes use of functional components
 ## Features
 
 - Click a card to flip and see Romaji
-- Order and positioning are random
+- Select from Hiragana, Katakana, or both
+- Button to randomize order
 - Keyboard accessible
 
 ## Todo

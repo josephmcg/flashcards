@@ -10,6 +10,7 @@ function App() {
   const [cards] = useState(KANA);
   const [category, setCategory] = useState("hiragana");
   const [dark, setDark] = useState(false);
+  const [random, setRandom] = useState(0);
 
   return (
     <div className={`${dark ? "dark" : ""}`}>
@@ -23,12 +24,14 @@ function App() {
           </select>
         </div>
 
+        <button onClick={() => setRandom(random + 1)}>Randomize</button>
+
         <button className="icon-button" onClick={() => setDark(!dark)}>
           <img src={`${dark ? sun : moon}`} alt="theme toggle" className="icon" />
         </button>
       </header>
       <div className="container">
-        <CardList cards={cards} category={category} />
+        <CardList cards={cards} category={category} random={random} />
       </div>
       <Footer dark={dark} />
     </div>
