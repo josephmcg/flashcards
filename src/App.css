@@ -125,7 +125,8 @@ footer {
   color: #fafafa;
 }
 .dark .card,
-.dark header {
+.dark header,
+.dark footer {
   box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.6);
 }
 
