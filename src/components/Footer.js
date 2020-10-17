@@ -7,7 +7,7 @@ export default function Footer({ dark }) {
     <footer>
       <div>© 2020 Joe McGrath</div>
       <div className={`${dark ? "dark" : ""}`}>
-        <a href="https://github.com/josephmcg/flashcards" target="_blank">
+        <a href="https://github.com/josephmcg/flashcards" rel="noopener noreferrer" target="_blank">
           <img src={`${dark ? githubDark : github}`} alt="Github link" />
         </a>
       </div>
