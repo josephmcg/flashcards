@@ -15,7 +15,7 @@ React app for studying Hiragana and Katakana. Makes use of functional components
 
 - Save dark mode to local storage
 - Button to reset flip for all
-- Kanji
+- Detect machine dark mode preference
 
 ## Local Development
 
