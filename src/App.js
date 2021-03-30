@@ -17,7 +17,11 @@ function App() {
       <header>
         <div className="form-group">
           <label htmlFor="category">Category: </label>
-          <select name="category" id="category" onChange={(e) => setCategory(e.currentTarget.value)}>
+          <select
+            name="category"
+            id="category"
+            onChange={(e) => setCategory(e.currentTarget.value)}
+          >
             <option value="hiragana">Hiragana</option>
             <option value="katakana">Katakana</option>
             <option value="both">Both</option>
@@ -27,7 +31,11 @@ function App() {
         <button onClick={() => setRandom(random + 1)}>Randomize</button>
 
         <button className="icon-button" onClick={() => setDark(!dark)}>
-          <img src={`${dark ? sun : moon}`} alt="theme toggle" className="icon" />
+          <img
+            src={`${dark ? sun : moon}`}
+            alt="theme toggle"
+            className="icon"
+          />
         </button>
       </header>
       <div className="container">
