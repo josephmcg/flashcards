@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import CardList from "./components/CardList";
 import Footer from "./components/Footer";
+
+import useDarkMode from "use-dark-mode";
+
 import sun from "./assets/sun.svg";
 import moon from "./assets/moon.svg";
 
@@ -9,11 +12,11 @@ import "./App.css";
 function App() {
   const [cards] = useState(KANA);
   const [category, setCategory] = useState("hiragana");
-  const [dark, setDark] = useState(false);
+  const darkMode = useDarkMode(false);
   const [random, setRandom] = useState(0);
 
   return (
-    <div className={`${dark ? "dark" : ""}`}>
+    <div>
       <header>
         <div className="form-group">
           <label htmlFor="category">Category: </label>
@@ -30,9 +33,9 @@ function App() {
 
         <button onClick={() => setRandom(random + 1)}>Randomize</button>
 
-        <button className="icon-button" onClick={() => setDark(!dark)}>
+        <button className="icon-button" onClick={() => darkMode.toggle()}>
           <img
-            src={`${dark ? sun : moon}`}
+            src={`${darkMode.value ? sun : moon}`}
             alt="theme toggle"
             className="icon"
           />
@@ -41,7 +44,7 @@ function App() {
       <div className="container">
         <CardList cards={cards} category={category} random={random} />
       </div>
-      <Footer dark={dark} />
+      <Footer dark={darkMode.value} />
     </div>
   );
 }
